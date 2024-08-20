@@ -9,7 +9,7 @@ const BaseballPlayerEditor: FC = () => {
 
     const {data, isLoading } = useGetBaseballPlayerQuery(Number(playerId));
 
-    if (isLoading && data) {
+    if (isLoading || !data) {
         return <Typography color="primary" variant="h2">
             Loading...
         </Typography>;
