@@ -1,0 +1,6 @@
+@FractionalAssessment.Server_HostAddress = http://localhost:5171
+
+GET {{FractionalAssessment.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
